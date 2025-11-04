@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novel Bucin</title>
+    <link rel="stylesheet" href="novel_bucin.css">
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fas fa-heart"></i>
+            <span>Novel Bucin</span>
+        </div>
+        <div class="nav-controls">
+            <button id="toggle-theme" class="nav-btn">
+                <i class="fas fa-moon"></i>
+                <span>Mode Malam</span>
+            </button>
+            <button id="zoom-in" class="nav-btn">
+                <i class="fas fa-search-plus"></i>
+            </button>
+            <button id="zoom-out" class="nav-btn">
+                <i class="fas fa-search-minus"></i>
+            </button>
+            <button id="toggle-menu" class="nav-btn menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <h1>💕 Selamat Datang di Cerita Kita 💕</h1>
+        <p>Tempat di mana kata-kata cinta menjadi kisah</p>
+    </div>
+
+    <div class="novel-container">
+        <aside id="chapter-list" class="chapter-list">
+            <div class="chapter-header">
+                <h2><i class="fas fa-book-open"></i> Daftar Bab</h2>
+            </div>
+            <!-- Chapters will be inserted here -->
+        </aside>
+        <main class="content">
+            <div class="content-header">
+                <h1 id="chapter-title"></h1>
+                <div class="reading-controls">
+                    <button id="prev-chapter" class="chapter-nav">
+                        <i class="fas fa-chevron-left"></i> Sebelumnya
+                    </button>
+                    <button id="next-chapter" class="chapter-nav">
+                        Selanjutnya <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="content-area" class="content-area">
+                <!-- Gambar akan muncul di sini -->
+                <div class="featured-image">
+                    <img src="WhatsApp Image 2025-11-03 at 22.54.02.jpeg" alt="Chapter Image">
+                </div>
+                <!-- Konten cerita akan muncul di sini -->
+                <div class="chapter-content"></div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <i class="fas fa-heart"></i>
+                <p>&copy; 2025 Novel Bucin. Semua hak dilindungi.</p>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="novel_bucin.js"></script>
+</body>
+</html>
